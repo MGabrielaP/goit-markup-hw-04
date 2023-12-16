@@ -208,7 +208,7 @@ body {
   display: flex;
   gap: 24px;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 0px;
 }
 
@@ -225,8 +225,12 @@ body {
 }
 
 .social-media-icons:hover,
-.social-media-icons: :active {
-  fill: #404bbf;
+.social-media-icons:focus {
+  background-color: #404bbf;
+}
+
+.social-media-icons-svg {
+  fill: var(--logo-buttons-sectionfour-index-background-color);
 }
 /*Classes common to ALL the pages*/
 
@@ -300,6 +304,9 @@ body {
   background-color: #ffffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .section-four-pictures-padding {
@@ -396,6 +403,8 @@ body {
   border: none;
   color: #ffffffff;
   border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .buttons-nav:focus {
@@ -403,6 +412,8 @@ body {
   border: none;
   color: #ffffffff;
   border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .pointer {
   cursor: pointer;
@@ -420,6 +431,16 @@ body {
   padding: 12px 24px;
   border: 1px solid var(--header-buttom-border);
 }
+
+.portfolio-images-link {
+  display: block;
+}
+
+.portfolio-images-link:hover .portfolio-images-link:focus {
+  box-shadow: 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-images-list {
   display: flex;
   flex-wrap: wrap;
@@ -458,6 +479,8 @@ body {
 }
 
 .customer-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .customer-title {
@@ -466,27 +489,30 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 111.111%;
+  line-height: 1.11%;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .customer-list {
-  display: inline-flex;
-  align-items: flex-start;
+  display: flex;
   gap: 24px;
   list-style: none;
-  width: 1128px;
-  height: 88px;
 }
 
 .customer-card {
+  width: calc((100% - 120px) / 6);
   width: 168px;
   height: 88px;
+}
+
+.customer-card-link {
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
 }
-
 .customer-logo {
   width: 104px;
   height: 56px;
