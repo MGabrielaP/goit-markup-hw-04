@@ -379,6 +379,10 @@ body {
   justify-content: center;
 }
 
+.footer-social-media-link:hover,
+.footer-social-media-link:focus {
+  background-color: #31d0aa;
+}
 /* Classes for PORTFOLIO Page */
 .portfolio-header {
   display: flex;
