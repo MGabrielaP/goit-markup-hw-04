@@ -260,6 +260,8 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
+  align-items: baseline;
 }
 
 .nav-header {
@@ -344,6 +346,20 @@ body {
   text-transform: capitalize;
   color: var(--logo-titles-color);
   margin-bottom: 72px;
+}
+
+.index-footer-logo-and-text {
+  margin-right: 120px;
+}
+
+.index-footer-social-media {
+  color: var(--background-page-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
 }
 
 /* Classes for PORTFOLIO Page */
