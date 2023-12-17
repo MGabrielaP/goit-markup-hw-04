@@ -348,11 +348,11 @@ body {
   margin-bottom: 72px;
 }
 
-.index-footer-logo-and-text {
+.footer-logo-and-text {
   margin-right: 120px;
 }
 
-.index-footer-social-media {
+.footer-social-media {
   color: var(--background-page-color);
   font-size: 16px;
   font-style: normal;
@@ -367,6 +367,16 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
+}
+
+.footer-social-media-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-blue-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Classes for PORTFOLIO Page */
