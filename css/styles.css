@@ -260,7 +260,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
   align-items: baseline;
 }
 
@@ -382,6 +381,15 @@ body {
 .footer-social-media-link:hover,
 .footer-social-media-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: baseline;
+  display: flex;
 }
 /* Classes for PORTFOLIO Page */
 .portfolio-header {
