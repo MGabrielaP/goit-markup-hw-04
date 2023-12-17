@@ -570,13 +570,12 @@ body {
   justify-content: center;
   color: var(--customer-color);
 }
-.customer-card-link:hover {
-  border-color: #404bbf;
-}
-
+.customer-card-link:hover,
 .customer-card-link:focus {
   border-color: #404bbf;
+  color: #404bbf;
 }
+
 .customer-logo {
   width: 104;
   height: 56;
