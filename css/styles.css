@@ -579,11 +579,10 @@ body {
 .customer-logo {
   width: 104px;
   height: 56px;
-  flex-shrink: 0;
+  fill: currentColor;
 }
 
 .customer-logo:hover,
 .customer-logo:focus {
-  border-color: #404bbf;
-  color: #404bbf;
+  fill: #404bbf;
 }
