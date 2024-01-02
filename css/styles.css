@@ -54,8 +54,6 @@ body {
 
 .nav-flex {
   display: flex;
-  width: 1440px;
-  height: 72px;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
@@ -96,6 +94,7 @@ body {
   color: var(--background-page-color);
   max-width: 496px;
   margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -254,6 +253,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -273,7 +274,6 @@ body {
 .nav-header {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .nav-header-ul {
@@ -577,7 +577,13 @@ body {
 }
 
 .customer-logo {
-  width: 104;
-  height: 56;
-  fill: currentColor;
+  width: 104px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.customer-logo:hover,
+.customer-logo:focus {
+  border-color: #404bbf;
+  color: #404bbf;
 }
